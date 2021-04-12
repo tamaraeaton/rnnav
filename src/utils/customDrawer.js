@@ -7,21 +7,21 @@ import {
 } from '@react-navigation/drawer';
 
 const MyCustomDrawer = (props) => {
-    return(
+    return (
         <DrawerContentScrollView {...props}>
-            <Button 
+            <Button
                 title="Home"
-                onPress={()=>props.navigation.navigate("Home")}
+                onPress={()=> props.navigation.navigate('Home')}
             />
-                        <Button 
+            <Button
                 title="Users"
-                onPress={()=>props.navigation.navigate("Users")}
+                onPress={()=> props.navigation.navigate('Users')}
             />
 
             {/* <View>
                 <Text>Hello user!!</Text>
             </View>
-            <DrawerItemList {...props}/>
+            <DrawerItemList {...props} />
             <DrawerItem 
                 label="Contact"
                 onPress={()=>alert('contact')}
